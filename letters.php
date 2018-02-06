@@ -1,12 +1,21 @@
-Greetings!
+<!DOCTYPE html>
+<html>
+<head>
+	<title>test php</title>
+</head>
+<body>
+
+<p>	Greetings!
 
 <?php
 
 $letter = $_GET['letter'];
 $number = $_GET['number'];
 
-$counter = 1;
-while ($counter <= $number) {
+$counter = 0;
+
+
+while ($counter < $number) {
   echo "$letter ";
   $counter++;
   system(escapeshellcmd("say $letter"));
@@ -15,5 +24,10 @@ while ($counter <= $number) {
 
 ?>
 
-Goodbye.
+Goodbye.</p>
 
+
+
+
+</body>
+</html>
